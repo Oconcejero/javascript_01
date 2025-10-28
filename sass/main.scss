@@ -1,6 +1,8 @@
 @use 'variables' as *;
 
 body {
+  margin-left: 50px;
+  margin-right: 50px;
   background-color: rgb(43, 39, 39);
   .list{
     display: flex;
@@ -106,6 +108,60 @@ body {
         font-family: $primary-font;
         color: beige;
       }
+    }
+  }
+  .container5 {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+  }
+  h3 {
+    font-family: $primary-font;
+    color: beige;
+  }
+  .resultado {
+    display: block;
+    background-color: white;
+  }
+
+  .container6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .calculadora{
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: repeat(4, auto);
+      gap: 15px;
+      width: 150px;
+      margin: auto;
+      margin-top: 25px;
+      background-color: azure;
+      text-align: center;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      padding-left: 10px;
+      padding-right: 10px;
+      div {
+        gap: 10px;
+        border: solid black 1px;
+      }
+      div:hover {
+        gap: 10px;
+        border: solid black 1px;
+        background-color: rgba(94, 94, 34, 0.377);
+      }
+      .botonCalculadoraOp {
+        background-color: aquamarine;
+      }
+      .botonCalculadoraOp:hover {
+        background-color: rgb(31, 139, 103);
+      }  
+    }
+    .resultado {
+      padding: 15px 25px;
+      margin-top: 25px;
+      width: 250px;
     }
   }
 }
