@@ -1,5 +1,3 @@
-import 'sass/main.scss';
-
 const botonRandom = document.querySelector('.random');
 
 botonRandom.addEventListener("click", ()=> {

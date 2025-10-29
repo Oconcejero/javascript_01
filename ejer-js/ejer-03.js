@@ -1,5 +1,3 @@
-import 'sass/main.scss';
-
 const input = document.querySelector('.agregar');
 const boton = document.querySelector('.botonAgregar');
 const lista = document.querySelector('.lista');

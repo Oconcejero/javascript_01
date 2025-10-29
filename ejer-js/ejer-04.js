@@ -1,5 +1,3 @@
-import 'sass/main.scss';
-
 const textarea = document.querySelector('.parrafo');
 const inputFiltro = document.querySelector('.buscar');
 const resultado = document.querySelector('.resultado');

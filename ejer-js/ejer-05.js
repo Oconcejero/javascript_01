@@ -1,5 +1,3 @@
-import 'sass/main.scss';
-
 const botonNum = document.querySelectorAll('.botonCalculadora');
 const botonOP = document.querySelectorAll('.botonCalculadoraOp');
 const resultado = document.querySelector('.resultado');

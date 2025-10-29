@@ -1,5 +1,3 @@
-import 'sass/main.scss';
-
 const nuevaTarea = document.querySelector('.nueva-tarea');
 const agregar = document.querySelector('.agregar');
 const lista = document.querySelector('.lista-tareas');
