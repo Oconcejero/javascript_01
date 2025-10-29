@@ -1,17 +1,32 @@
 import '../sass/main.scss';
 
-const textarea = document.querySelector('.parrafo');
-const inputFiltro = document.querySelector('.buscar');
+const botonNum = document.querySelectorAll('.botonCalculadora');
+const botonOP = document.querySelectorAll('.botonCalculadoraOp');
 const resultado = document.querySelector('.resultado');
+const botonRes = document.querySelector('.botonCalculadoraRes');
 
-inputFiltro.addEventListener('input', () => {
-    const textoOriginal = textarea.value;
-    const filtro = inputFiltro.value.toLowerCase();
-    const palabras = textoOriginal.split(" ");
+botonNum.forEach(boton => {
+    boton.addEventListener('click', () => {
+        const valor = boton.textContent.trim();
+        if(valor !== "") {
+            resultado.textContent += valor;
+        }
+    })
+});
 
-    const coincidencias = palabras.filter(palabra =>
-        palabra.toLowerCase().includes(filtro)
-    );
+botonOP.forEach(boton => {
+    boton.addEventListener('click', () => {
+        const operador = boton.textContent.trim();
+        resultado.textContent += ` ${operador} `;
+    });
+});
 
-    resultado.textContent = coincidencias.join(' ');
+botonRes.addEventListener('click', (event) => {
+    try {
+    const operacion = resultado.textContent;
+    const resultadoFinal = eval(operacion);
+    resultado.textContent = resultadoFinal;
+    } catch {
+        resultado.textContent = 'Error';
+    }
 });
