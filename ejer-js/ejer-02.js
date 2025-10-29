@@ -1,4 +1,4 @@
-import '../sass/main.scss';
+import 'sass/main.scss';
 
 const clic = document.querySelector('.clics');
 const clics = document.querySelector('.contador');

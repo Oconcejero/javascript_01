@@ -1,4 +1,4 @@
-import '../sass/main.scss';
+import 'sass/main.scss';
 
 const input = document.querySelector('.agregar');
 const boton = document.querySelector('.botonAgregar');

@@ -1,4 +1,4 @@
-import '../sass/main.scss';
+import 'sass/main.scss';
 
 const parrafo = document.querySelector('.parrafo');
 const caracteres = document.querySelector('.caracteres');

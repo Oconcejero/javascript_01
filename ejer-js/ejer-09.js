@@ -1,4 +1,4 @@
-import '../sass/main.scss';
+import 'sass/main.scss';
 
 const nuevaTarea = document.querySelector('.nueva-tarea');
 const agregar = document.querySelector('.agregar');

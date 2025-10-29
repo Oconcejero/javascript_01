@@ -1,4 +1,4 @@
-import '../sass/main.scss';
+import 'sass/main.scss';
 
 const tiempo = document.querySelector('.tiempo p');
 const start = document.querySelector('.start');

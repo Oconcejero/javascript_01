@@ -1,4 +1,4 @@
-import '../sass/main.scss';
+import 'sass/main.scss';
 
 const numCaracteres = document.querySelector('.contadorCar');
 const genContr = document.querySelector('.genContr');
